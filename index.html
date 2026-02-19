@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Budget tracker — Validador de Cálculos</title>
+    <link rel="icon" href="media/imagem/logo/nevext-favicon.ico">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="app-wrap">
+      <header class="app-header">
+        <div>
+          <h1>Budget tracker</h1>
+          <p class="subtitle">Manage your finances</p>
+        </div>
+        <button id="themeToggle" class="icon-btn" title="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </header>
+
+      <section class="dashboard">
+        <div class="left-col">
+          <div class="card transactions-card">
+            <div class="card-top">
+              <div class="tabs">
+                <button class="tab active">Spending</button>
+                <button class="tab">Income</button>
+              </div>
+              <button class="add-btn">+ Add new</button>
+            </div>
+
+            <ul class="tx-list">
+              <li class="tx">
+                <div class="tx-left">
+                  <div class="tx-icon income">$
+                  </div>
+                  <div>
+                    <div class="tx-title">Salary</div>
+                    <div class="tx-date">10/1/2025</div>
+                  </div>
+                </div>
+                <div class="tx-right tx-amount plus">+ $3500.00</div>
+                <div class="tx-actions">
+                  <button class="action">✎</button>
+                  <button class="action">🗑</button>
+                </div>
+              </li>
+
+              <li class="tx">
+                <div class="tx-left">
+                  <div class="tx-icon income">$
+                  </div>
+                  <div>
+                    <div class="tx-title">Freelance</div>
+                    <div class="tx-date">Invalid Date</div>
+                  </div>
+                </div>
+                <div class="tx-right tx-amount plus">+ $750.00</div>
+                <div class="tx-actions">
+                  <button class="action">✎</button>
+                  <button class="action">🗑</button>
+                </div>
+              </li>
+
+              <li class="tx">
+                <div class="tx-left">
+                  <div class="tx-icon expense">🛒
+                  </div>
+                  <div>
+                    <div class="tx-title">Health</div>
+                    <div class="tx-date">10/26/2025</div>
+                  </div>
+                </div>
+                <div class="tx-right tx-amount minus">- $50.00</div>
+                <div class="tx-actions">
+                  <button class="action">✎</button>
+                  <button class="action">🗑</button>
+                </div>
+              </li>
+
+              <li class="tx">
+                <div class="tx-left">
+                  <div class="tx-icon income">$
+                  </div>
+                  <div>
+                    <div class="tx-title">Bonus</div>
+                    <div class="tx-date">10/25/2025</div>
+                  </div>
+                </div>
+                <div class="tx-right tx-amount plus">+ $500.00</div>
+                <div class="tx-actions">
+                  <button class="action">✎</button>
+                  <button class="action">🗑</button>
+                </div>
+              </li>
+
+              <li class="tx">
+                <div class="tx-left">
+                  <div class="tx-icon expense">🛒
+                  </div>
+                  <div>
+                    <div class="tx-title">Food</div>
+                    <div class="tx-date">10/24/2025</div>
+                  </div>
+                </div>
+                <div class="tx-right tx-amount minus">- $45.00</div>
+                <div class="tx-actions">
+                  <button class="action">✎</button>
+                  <button class="action">🗑</button>
+                </div>
+              </li>
+
+              <li class="tx">
+                <div class="tx-left">
+                  <div class="tx-icon expense">🛍️
+                  </div>
+                  <div>
+                    <div class="tx-title">Shopping</div>
+                    <div class="tx-date">10/22/2025</div>
+                  </div>
+                </div>
+                <div class="tx-right tx-amount minus">- $120.00</div>
+                <div class="tx-actions">
+                  <button class="action">✎</button>
+                  <button class="action">🗑</button>
+                </div>
+              </li>
+
+              <li class="tx">
+                <div class="tx-left">
+                  <div class="tx-icon income">$
+                  </div>
+                  <div>
+                    <div class="tx-title">Investment</div>
+                    <div class="tx-date">10/20/2025</div>
+                  </div>
+                </div>
+                <div class="tx-right tx-amount plus">+ $200.00</div>
+                <div class="tx-actions">
+                  <button class="action">✎</button>
+                  <button class="action">🗑</button>
+                </div>
+              </li>
+
+              <li class="tx">
+                <div class="tx-left">
+                  <div class="tx-icon expense">🎮
+                  </div>
+                  <div>
+                    <div class="tx-title">Entertainment</div>
+                    <div class="tx-date">10/18/2025</div>
+                  </div>
+                </div>
+                <div class="tx-right tx-amount minus">- $75.00</div>
+                <div class="tx-actions">
+                  <button class="action">✎</button>
+                  <button class="action">🗑</button>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="right-col">
+          <div class="card balance-card">
+            <div class="card-title">Total balance</div>
+            <div class="balance-value">$3165.00</div>
+            <div class="balance-sub">You are in the green!</div>
+          </div>
+
+          <div class="card chart-card">
+            <div class="card-top small">
+              <div>
+                <div class="card-title">Spending trends</div>
+                <div class="small-muted">Total spent in period <strong>$0.00</strong></div>
+              </div>
+              <div class="period-toggle">
+                <button class="period active">7 days</button>
+                <button class="period">30 days</button>
+              </div>
+            </div>
+
+            <div class="chart-wrap">
+              <!-- simple SVG sparkline that script.js will draw/animate -->
+              <svg id="spark" viewBox="0 0 600 220" preserveAspectRatio="none" class="spark"></svg>
+              <div class="x-labels">
+                <span>Feb 12</span>
+                <span>Feb 15</span>
+                <span>Feb 18</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <footer class="credits">&copy; <span id="year"></span> Validador de Cálculos</footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
